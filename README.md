@@ -1,6 +1,3 @@
-# Packaging_classification_MNIST
-Containerization Docker
-
 # Overview
 The objectif is to develop and package, in running docker container, a classification application for MNIST data.
 
