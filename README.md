@@ -49,7 +49,7 @@ At the root of the project, we find the file ```backend.py``` containing the cla
 The Flask application is coded in the file ```app.py```. You find also the Dockerfile (with the requirements) for the creation of the Docker image.
 
 - The Docker container launches the Flask application, accessible at the adress [http://localhost:5000](http://localhost:5000/), in your web browser.
-- The File Selection Form is available and will send the images selected to the server.
+- The File Selection Form is available and will send the images selected to the encapsulated server.
 - The Classifier (under the ```backend.py``` file) is then called and realize the prediction.
 - The server returns the prediction in a json file.
 
