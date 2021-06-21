@@ -3,7 +3,7 @@ The objectif is to develop and package, in a running docker container, a classif
 
 # Architecture
 
-All the architecture is encapsulated in a [docker](https://www.docker.com/) container. It allows to any user to install the application, upload an image from test dataset MNIST and obtain the prediction of the number written on (prediction returned in a json file).
+All the architecture is encapsulated in a [docker](https://www.docker.com/) container. It allows to any user to install the application, upload an image from test_dataset MNIST and obtain the prediction of the number written on (prediction returned in a json file).
 
 A simple web inteface has been developped (Flask framework) allowing the user to select the files used for the prediction.
 
@@ -28,7 +28,9 @@ The Flask application is coded in the file ```app.py```. You find also the Docke
 # Setup
 In order to launch the creation of the Docker image, follow the instructions below :
 
-- Open a shell and run the command :
+- Install [docker](https://www.docker.com/) (version 20.10.6)
+
+- Open a shell in the directory where the file Dockerfile is savedand run the command :
 ```
     $ docker build -t flask-tutorial:latest .
 ```
