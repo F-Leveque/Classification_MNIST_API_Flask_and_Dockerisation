@@ -51,7 +51,7 @@ The Flask application is coded in the file ```app.py```. You find also the Docke
 - The server returns the prediction in a json file.
 
 ## Data used
-Classification model (accuracy on test dasaset 98.6%): SVM deg 4 polynomial + deskewing preprocessing  
+Classification model trained (accuracy on test dasaset 98.6%): SVM deg 4 polynomial + deskewing preprocessing  
 Data available on the website http://yann.lecun.com/exdb/mnist/  
 Train data : train-images-idx3-ubyte.gz + train-labels-idx1-ubyte.gz  
 Test data : t10k-images-idx3-ubyte.gz + t10k-labels-idx1-ubyte.gz  
