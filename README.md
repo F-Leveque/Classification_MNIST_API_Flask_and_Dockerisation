@@ -13,6 +13,10 @@ A simple web inteface has been developped (Flask framework) allowing the user to
 * 2.5 GB de RAM
 
 ##  Setup
+<p align="center">
+<img src="img/docker_image.JPG" alt="drawing" width="500"/>
+</p>
+
 In order to launch the creation of the Docker image, follow the instructions below :
 
 - Install [docker](https://www.docker.com/) (version 20.10.6) and run the application.
