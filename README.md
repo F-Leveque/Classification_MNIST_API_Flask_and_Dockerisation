@@ -48,7 +48,7 @@ The Flask application is coded in the file ```app.py```. You find also the Docke
 ```
     http://localhost:5000/
 ```
-- The File Selection Form is available and will send to the server the images selected.
+- The File Selection Form is available and will send the images selected to the server.
 - The Classifier (under the ```backend.py``` file) is then called and realize the prediction.
 - The server returns the prediction in a json file.
 
