@@ -5,7 +5,7 @@ The objectif is to develop and package, in a running docker container, a classif
 
 All the architecture is encapsulated in a [docker](https://www.docker.com/) container. It allows to any user to install the application, upload an image from the test_dataset MNIST and obtain the prediction of the number written on (prediction returned in a json file).
 
-A simple web inteface has been developped (Flask framework) allowing the user to select the files used for the prediction.
+A simple web inteface has been developped (Flask framework) allowing the user to select the files used for prediction.
 
 ##  Workflow
 
