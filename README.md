@@ -35,7 +35,9 @@ Wait until the process succeded in the creation of the Docker image.
 
 - Use the Form to select your files and obtain your prediction ! (10 images from the test dataset are available in the folder images_test)
 
+<p align="center">
 <img src="img/app.JPG" alt="drawing" width="500"/>
+</p>
 
 ##  Workflow
 
