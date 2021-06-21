@@ -66,13 +66,13 @@ def inference():
                 return redirect('/')
 
         #check if a prediction has already been created and delete it
-        if os.path.isfile("./predictions/prediction.json"):
-            os.remove("./predictions/prediction.json")
+        if os.path.isfile("./prediction.json"):
+            os.remove("./prediction.json")
 
         #write the prediction in a new json file
-        with open("./predictions/prediction.json", "a") as f:
+        with open("./prediction.json", "a") as f:
             json.dump(data, f)
-        return send_file("./predictions/prediction.json", as_attachment=True)
+        return send_file("./prediction.json", as_attachment=True)
             
 
 if __name__ == "__main__":
