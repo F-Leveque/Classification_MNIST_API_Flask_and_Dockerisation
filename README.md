@@ -15,9 +15,9 @@ A simple web inteface has been developped (Flask framework) allowing the user to
 ##  Setup
 In order to launch the creation of the Docker image, follow the instructions below :
 
-- Install [docker](https://www.docker.com/) (version 20.10.6)
+- Install [docker](https://www.docker.com/) (version 20.10.6) and run the application.
 
-- Open a shell in the directory where the file Dockerfile is savedand run the command :
+- Open a shell in the directory where the file ```Dockerfile``` is saved and run the command :
 ```
     $ docker build -t mnist-prediction:latest .
 ```
