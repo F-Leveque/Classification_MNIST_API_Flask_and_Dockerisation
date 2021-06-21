@@ -21,6 +21,8 @@ In order to launch the creation of the Docker image, follow the instructions bel
 
 - Install [docker](https://www.docker.com/) (version 20.10.6) and run the application.
 
+- Download and extract the repository Packaging_classification_MNIST
+
 - Open a shell in the directory where the file ```Dockerfile``` is saved and run the command :
 ```
     $ docker build -t mnist-prediction:latest .
