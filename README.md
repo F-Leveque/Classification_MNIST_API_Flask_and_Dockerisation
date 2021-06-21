@@ -7,19 +7,6 @@ All the architecture is encapsulated in a [docker](https://www.docker.com/) cont
 
 A simple web inteface has been developped (Flask framework) allowing the user to select the files used for prediction.
 
-##  Workflow
-
-At the root of the project, we find the file ```backend.py``` containing the classifier code, the pipeline preprocessing and the training method. 
-The Flask application is coded in the file ```app.py```. You find also the Dockerfile (with the requirements) for the creation of the Docker image.
-
-- The Docker container launches the Flask application, accessible with the following command in your web browser :
-```
-    http://localhost:5000/
-```
-- The File Selection Form is available and will send to the server the images selected.
-- The Classifier (under the ```backend.py``` file) is then called and realize the prediction.
-- The server returns the prediction in a json file.
-
 ##  Requirements
 
 * [Docker Engine](https://docs.docker.com/install/) (version 20.10.6)
@@ -46,17 +33,28 @@ Wait until the process succeded in the creation of the Docker image.
     http://localhost:5000/
 ```
 
-- Use the Form to select your files and obtain your prediction !
+- Use the Form to select your files and obtain your prediction ! (10 images from the test dataset are available in the folder images_test)
 
+<img src="img/app.JPG" alt="drawing" width="1000"/>
 
-##  Exemple
-### Data used
+##  Workflow
+
+At the root of the project, we find the file ```backend.py``` containing the classifier code, the pipeline preprocessing and the training method. 
+The Flask application is coded in the file ```app.py```. You find also the Dockerfile (with the requirements) for the creation of the Docker image.
+
+- The Docker container launches the Flask application, accessible with the following command in your web browser :
+```
+    http://localhost:5000/
+```
+- The File Selection Form is available and will send to the server the images selected.
+- The Classifier (under the ```backend.py``` file) is then called and realize the prediction.
+- The server returns the prediction in a json file.
+
+## Data used
 Classification model (accuracy on test dasaset 98.6%): SVM deg 4 polynomial + deskewing preprocessing
 Data available on the website http://yann.lecun.com/exdb/mnist/
 Train data : train-images-idx3-ubyte.gz + train-labels-idx1-ubyte.gz
 Test data : t10k-images-idx3-ubyte.gz + t10k-labels-idx1-ubyte.gz
-
-- 10 images from the test dataset are available in the folder images_test.
 
 ##  References
 - https://stackoverflow.com/questions/40427435/extract-images-from-idx3-ubyte-file-or-gzip-via-python
