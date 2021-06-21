@@ -45,7 +45,7 @@ Wait until the process succeded in the creation of the Docker image.
 
 ##  Workflow
 
-At the root of the project, we find the file ```backend.py``` containing the classifier code, the pipeline preprocessing and the training method. 
+At the root of the project, you find the file ```backend.py``` containing the classifier code, the pipeline preprocessing and the training method. 
 The Flask application is coded in the file ```app.py```. You find also the Dockerfile (with the requirements) for the creation of the Docker image.
 
 - The Docker container launches the Flask application, accessible at the adress [http://localhost:5000](http://localhost:5000/), in your web browser.
