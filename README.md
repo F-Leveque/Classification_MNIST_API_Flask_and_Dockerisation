@@ -1,14 +1,13 @@
 # Overview
-The objectif is to develop and package, in running docker container, a classification application for MNIST data.
+The objectif is to develop and package, in a running docker container, a classification application for MNIST data.
 
-# Architecture & Workflow
-## Architecture
+# Architecture
 
 All the architecture is encapsulated in a [docker] container. It allows to any user to install the application, upload an image from test dataset MNIST and obtain the prediction of the number written on (prediction returned in a json file).
 
 A simple web inteface has been developped (Flask framework) allowing the user to select the files used for the prediction.
 
-## Workflow
+# Workflow
 
 At the root of the project, we find the file ```backend.py``` containing the classifier code, the pipeline preprocessing and the training method. 
 The Flask application is coded in the file ```app.py```. You find also the Dockerfile (with the requirements) for the creation of the Docker image.
