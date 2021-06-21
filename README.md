@@ -32,13 +32,13 @@ In order to launch the creation of the Docker image, follow the instructions bel
 
 - Open a shell in the directory where the file Dockerfile is savedand run the command :
 ```
-    $ docker build -t flask-tutorial:latest .
+    $ docker build -t mnist-prediction:latest .
 ```
 Wait until the process succeded in the creation of the Docker image.
 
 - Run the command to start the container :
 ```
-    $ docker run -d -p 5000:5000 flask-tutorial
+    $ docker run -d -p 5000:5000 mnist-prediction
 ```
 
 - Open your browser and use the following adress :
