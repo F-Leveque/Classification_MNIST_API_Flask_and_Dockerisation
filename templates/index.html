@@ -11,10 +11,12 @@
   </head>
   <h1 align="center">Upload new File(s) for Prediction(s)</h1>
   <div class="underline"></div>
-  <form action = "http://localhost:5000/api" method="POST" enctype=multipart/form-data align="center" style=margin-top:25px;>
-    <input type=file name=file multiple>
-    <input type=submit value=Envoyer>
-  </form>
+  <div align="center">
+    <form action = "http://localhost:8000/api" method="POST" enctype=multipart/form-data  style=margin-top:25px;>
+      <input type=file name=file multiple>
+      <input type=submit value=Envoyer>
+    </form>
+  </div>
   <p align="center"><img src="/static/prediction.JPG" style=margin-top:25px;></p>
   <div align="center">
     {# source : https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/#message-flashing-pattern #}
