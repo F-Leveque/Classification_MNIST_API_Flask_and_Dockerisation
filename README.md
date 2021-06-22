@@ -45,6 +45,11 @@ Wait until the process succeded in the creation of the Docker image.
 <img src="img/app.JPG" alt="drawing" width="500"/>
 </p>
 
+- You can also obtain the prediction directly with the following command (example with images_test_2.jpg):
+```
+    $ curl --form file='@images_test_2.jpg' localhost:5000/api >> result.json
+```
+
 ##  Workflow
 
 At the root of the project, you find the file ```backend.py``` containing the classifier code, the pipeline preprocessing and the training method. 
