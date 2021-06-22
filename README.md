@@ -69,3 +69,5 @@ Test data : t10k-images-idx3-ubyte.gz + t10k-labels-idx1-ubyte.gz
 ##  References
 - https://stackoverflow.com/questions/40427435/extract-images-from-idx3-ubyte-file-or-gzip-via-python
 - https://stackoverflow.com/questions/43577665/deskew-mnist-images
+- https://aws.amazon.com/fr/ecr/
+- https://aws.amazon.com/fr/ecs/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc&ecs-blogs.sort-by=item.additionalFields.createdDate&ecs-blogs.sort-order=desc
